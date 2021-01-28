@@ -1,0 +1,268 @@
+body {
+    background-image:url('/static/images/sky1.jpg');
+    background-size: cover;
+}
+
+.logo-pic {
+    margin-left: 3rem;
+   
+    
+}
+
+.main-pic {
+    margin: 2rem 7rem;
+    margin-left: 10rem;
+}
+.main-pic-col {
+    justify-content: center;
+}
+
+.nav-pic {
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    height: 70%;
+    border:2px solid rgb(205, 202, 50);
+    transition: 2s;
+    
+    
+}
+
+
+.img-float {
+    float:left;
+    margin:7px;
+    
+}
+.img-float-text{
+    font-size: 18.2px;
+    color: white;
+}
+p{
+    color: white;
+}
+
+.container {
+    padding-left: 0;
+}
+
+.img-pic{
+    width: 300px;
+    height: 300px;
+}
+
+.nav-bar-right {
+    font-size: 20px;
+}
+
+.nav-bar-right {
+    text-decoration: none;
+    color: white;
+    
+    
+}
+.dropdown{
+    color: white;
+}
+
+.dropdown a:hover{
+    background-color: rgb(233, 230, 58);
+}
+
+.nav-bar-center p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+}
+.nav-bar-center img{
+    margin-left: 1.25rem;
+    margin-bottom: 0;
+}
+
+.bg_footer{
+    margin:0;
+    padding:0;
+}
+
+.fish-button{
+    margin-left:40rem;
+    position:absolute;
+    margin-top: 2rem;
+    font-size: 20px;
+
+}
+.phone{
+    color:#ffd200;
+    font:20px 'PFDinTextCondPro-Regular', sans-serif;
+    text-decoration: none;
+}
+
+.callme_button {
+    
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: .5em 2em;
+        outline: none;
+        border-width: 2px 0;
+        border-style: solid none;
+        border-color: #FDBE33 #000 #D77206;
+        border-radius: 6px;
+        background: linear-gradient(#F3AE0F, #E38916) #E38916;
+        transition: 0.2s;
+     
+      
+}
+a.callme_button:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+a.callme_button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+
+.home-pic {
+    height: 2vh;
+    color:#F3AE0F;
+    background: none;
+}
+.pets-bar{
+    
+    border: 14px solid  #FDBE33 #000 #D77206;;
+    border-style: outset;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.pets-bar a{
+    text-decoration: none;
+    color:#F3AE0F;
+}
+
+
+/*  
+TEST
+*/
+.content_circle {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    left:400px;
+    top:350px;
+    padding:50px;
+
+    animation: myOrbit 4s linear infinite;
+}
+
+
+/*
+nav-pic-animation
+*/
+
+.nav-pic-dogs:hover{
+    transform: translate(0px,-20px);
+    border: 6px solid rgb(167, 200, 117);
+    transition: 1s;
+}
+
+.nav-pic-cats:hover{
+    transform: scale(1.5,1.5);
+    border: 6px solid rgb(46, 36, 194);
+    transition: 2s;
+}
+
+
+.nav-pic-rodents:hover{
+    transform:rotate(45deg);
+    transition: 2s;
+}
+
+.nav-pic-fish:hover{
+    transform:skew(20deg,20deg);
+    transition: 2s;
+}
+
+.nav-pic-birds:hover{
+    transform: translate3d(30px,30px,60px);
+    transition: 2s;
+}
+
+.nav-pic-reptiles:hover{
+    transform: rotate3d(3,1,1,45deg);
+    transition: 2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * Set up the keyframes to actually describe the begining and end states of 
+ * the animation.  The browser will interpolate all the frames between these 
+ * points.  Again, remember your vendor-specific prefixes for now!
+ */
+@-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg) ; }
+    to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbit {
+    from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+
+.wrapper{
+    height: 700px;
+    width: 700px;
+
+}
+

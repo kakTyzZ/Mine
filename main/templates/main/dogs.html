@@ -1,0 +1,42 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container ">
+    <div class="row pets-bar">
+        <div class="col-1">
+            <a href="">
+                
+                <img src="{% static 'images/home.png' %}" alt="home" class='home-pic'>
+                /
+            </a>
+            
+        </div>
+        <div class="col-2">
+            <a href="">
+                Статьи о животных /
+            </a>
+        </div>
+        <div class="col-2">Статьи о собаках</div>
+    </div>
+</div>
+<div>
+    <p>
+        <a href="">Ротвейлер</a>
+    </p>
+</div>
+
+
+  <div class="container">
+    <div class="col-4">
+      <img src="{% static 'images\rotveller.jpg' %}" class='img-pages' alt="">
+    </div>
+    <div class="col"></div>
+  </div>
+
+
+
+
+
+{% endblock %}

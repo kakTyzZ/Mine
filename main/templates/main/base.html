@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+
+    <title>Зоомагазин</title>
+</head>
+<body>
+    <div class="container" >
+        <div class="row ">
+            <div class="col-8">
+                <img class='logo-pic' src="{% static 'images/logo.png' %}" alt="">
+                
+            </div>
+            <div class="col">
+                <a href="{% url 'main' %}" class='nav-bar-right'>Главная</a>
+            </div>
+            <div class="col">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                      Статьи о животных
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="{% url 'dogs' %}">Статьи о собаках</a></li>
+                      <li><a class="dropdown-item" href="{% url 'cats' %}">Статьи о кошках</a></li>
+                      <li><a class="dropdown-item" href="{% url 'rodents' %}">Статьи о грызунах</a></li>
+                      <li><a class="dropdown-item" href="{% url 'fish' %}">Статьи о аквариумистике</a></li>
+                      <li><a class="dropdown-item" href="{% url 'birds' %}">Статьи о птицах</a></li>
+                      <li><a class="dropdown-item" href="{% url 'reptiles' %}">Статьи о рептилиях</a></li>
+                    </ul>
+                  </div>
+
+            </div>
+            <div class="col">
+                <a href="{% url 'test' %}" class='nav-bar-right'>Контакты</a>
+            </div>
+            
+            
+            
+        </div>
+        <div class="row">
+            <div class="col main-pic-col">
+                <img src="{% static 'images/main.png' %}" alt="" class='main-pic'>
+            </div>
+        </div>
+        <div class="row nav-bar-center " >
+            <div class="col">
+                <a href="{% url 'dogs' %}">
+                    <img src="{% static 'images/topmenu1.jpg' %}" alt="dogs" class='nav-pic-dogs nav-pic'>
+                </a>
+                <p>Собаки</p>
+                
+            </div>
+            <div class="col">
+                <a href="{% url 'cats' %}">
+                    <img src="{% static 'images/topmenu2.jpg' %}" alt="cats" class='nav-pic-cats nav-pic'>
+                </a>
+                <p>Кошки</p>
+                
+            </div>
+            <div class="col">
+                <a href="{% url 'rodents' %}">
+                     <img src="{% static 'images/topmenu3.jpg' %}" alt="rodents" class='nav-pic-rodents nav-pic'>
+                </a>
+                <p>Грызуны</p>
+               
+            </div>
+            <div class="col">
+                <a href="{% url 'fish' %}">
+                    <img src="{% static 'images/topmenu4.jpg' %}" alt="fish" class='nav-pic-fish nav-pic'>
+                </a>
+                <p>Рыбы</p>
+                
+            </div>
+            <div class="col" style="perspective: 400px;">
+                <a href="{% url 'birds' %}">
+                      <img src="{% static 'images/topmenu5.jpg' %}" alt="birds" class='nav-pic-birds nav-pic'>
+                </a>
+                <p>Птицы</p>
+              
+            </div>
+            <div class="col">
+                <a href="{% url 'reptiles' %}">
+                            <img src="{% static 'images/topmenu6.jpg' %}" alt="reptiles" class='nav-pic-reptiles nav-pic'>
+                </a>
+                <p>Рептилии</p>
+        
+            </div>
+        </div>
+        
+{% block content %}
+
+{% endblock %}
+
+</div>
+
+<div class="row fish">
+
+<img src="{% static 'images/fisher.png' %}" alt="">
+<div class="col-3 fish-button">
+<a href="" class='phone'><p>+7 (342) 412-534</p></a>
+<a href="" class='phone'><p>8 (49244) 23-24-1</p> </a>
+
+<a href="#" title="Заказать обратный звонок" class="callme_button btn btn-warning">Закажите обратный звонок</a>
+</div>
+
+    
+</div>
+
+
+<div class="row">
+<div class="col-4 bg_footer">
+<img src="{% static 'images/bg_fotter.png' %}" alt="" class='bg_footer'>
+</div>
+<div class="col-4 bg_footer">
+<img src="{% static 'images/bg_fotter.png' %}" alt="" class='bg_footer'>
+</div>
+<div class="col-4 bg_footer">
+<img src="{% static 'images/bg_fotter.png' %}" alt="" class='bg_footer'>
+</div>
+
+</div>
+
+</body>
+</html>
